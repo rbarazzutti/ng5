@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-new-card-input',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   host: {'class':'col-4'}
 })
 export class NewCardInputComponent implements OnInit {
+
+  @Output() onCardAdd = new EventEmitter<String>();
 
   public newCard: any = {text: ''}
 
