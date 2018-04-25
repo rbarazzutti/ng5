@@ -17,3 +17,7 @@ adaptons .angular-cli.json et renommons les .css en .scss
 ### Premier composant
 
 `ng generate component Card`
+
+### Création d'un composant pour ajouter des cartes
+
+`ng generate component NewCardInput`
