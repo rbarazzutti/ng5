@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  addCard(cardText:string){
+    this.cards.push({text:cardText})
+  }
+
   public cards: Array<any> = [
     {text: 'Card 1'},
     {text: 'Card 2'},
