@@ -11,6 +11,7 @@ export class NewCardInputComponent implements OnInit {
   @HostListener('document:keypress',['$event'])
   handleKeyboardEvent(event:KeyboardEvent){
     if(event.code == "Enter" && this.newCard.text.length > 0){
+      console.log(this);
       this.addCard(this.newCard.text);
     }
   }
