@@ -13,3 +13,7 @@ Le site est disponible à l'adresse localhost:4200
 adaptons .angular-cli.json et renommons les .css en .scss
 
 `yarn add sass`
+
+### Premier composant
+
+`ng generate component Card`
